@@ -7,7 +7,7 @@ services:
       dockerfile: .devcontainer/Dockerfile
     volumes:
       - ..:/workspace:cached
-      - aroundtheblock-node_modules:/workspace/frontend/node_modules
+      - wt4g-node_modules:/workspace/frontend/node_modules
     command: /bin/sh -c "while sleep 1000; do :; done"
   db:
     image: postgres:15.2
@@ -20,4 +20,4 @@ services:
         - db-data:/var/lib/postgresql/data
 volumes:
   db-data:
-  aroundtheblock-node_modules:
+  wt4g-node_modules:
